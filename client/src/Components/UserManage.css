@@ -1,0 +1,14 @@
+.a{
+    color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: solid;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #9c0e0e;
+        width: fit-content;
+}
+.a:hover{
+    background-color: #147923;
+}

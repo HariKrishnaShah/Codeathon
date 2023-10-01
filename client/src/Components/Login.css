@@ -1,0 +1,112 @@
+a {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: solid;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #9c0e0e;
+    width: fit-content;
+}
+
+a:hover{
+      background-color: #147923;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    border: 5px solid;
+    border-color: black;
+    border-width: 2px;
+    background-color: #9c0e0e;
+    color: azure;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: solid;
+    justify-content: center;
+
+}
+
+ *{
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  .left, .right {
+    width: 18%;
+  }
+  
+  .middle {
+    width: 64%;
+  }
+
+  .row {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+
+  .intro{
+            border: 5px dotted;
+            background-color: #fcbdbd;
+            border-color: #9c0e0e;
+
+  }
+
+  .login{
+          border: 5px;
+          border-color: #9c0e0e;
+          border-style: dashed;
+          width:60%;
+          height: 350px;
+          color: #9c0e0e;
+          text-align: left;
+
+  }
+  .signup{
+    border: 5px;
+    border-color: #9c0e0e;
+    border-style: dashed;
+    width: 70%;
+    height: fit-content;
+    color: #9c0e0e;
+    text-align: left;
+  }
+
+  .eligible{
+    border: 5px;
+    border-color: #9c0e0e;
+    border-style: dashed;
+    width:60%;
+    color: #9c0e0e;
+    text-align: left;
+
+  }
+
+  .button{
+          background-color: #9c0e0e;
+          color: white;
+  }
+
+  .ro {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .col {
+    flex: 50%;
+    padding: 10px;
+    width: 100%;
+  }
+

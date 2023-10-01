@@ -1,0 +1,42 @@
+
+ *{
+    box-sizing: border-box;
+  }
+  
+
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  .left, .right {
+    width: 18% !important;
+  }
+  
+  .middle {
+    width: 64% !important;
+  }
+
+  .row{
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+
+  .intro{
+            border: 5px dotted;
+            background-color: #fcbdbd;
+            border-color: #9c0e0e;
+            padding: 20px !important;
+
+  }
+  table, td, th {
+    border: 2px solid !important;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+

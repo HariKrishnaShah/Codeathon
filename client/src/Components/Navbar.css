@@ -1,0 +1,31 @@
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    border: 5px solid;
+    border-color: black;
+    border-width: 2px;
+    background-color: #9c0e0e;
+    color: azure;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: solid;
+    justify-content: center;
+
+}
+.a{
+    color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: solid;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #9c0e0e;
+        width: fit-content;
+}
+.a:hover{
+    background-color: #147923;
+}

@@ -1,0 +1,14 @@
+.eligible{
+    border: 5px !important;
+    border-color: #9c0e0e !important;
+    border-style: dashed !important;
+    width:60% !important;
+    color: #9c0e0e !important;
+    text-align: left !important;
+
+  }
+
+  .button{
+          background-color: #9c0e0e !important;
+          color: white !important;
+  }
