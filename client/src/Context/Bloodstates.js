@@ -83,7 +83,7 @@ function Bloodstates(props) {
             body: JSON.stringify(payload)
         });
         const aa = await data.json()
-        console.log("Got data" + {aa});
+        return aa;
        
     }
     catch(error)

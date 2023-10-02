@@ -12,7 +12,6 @@ function Search() {
     const xpayload = {bloodgroup:xg, type:xt};
     const xresult = await apis.search(xpayload);
     setSearchR(xresult);
-    console.log("State Search" + xresult);
   }
   return (
     <>
@@ -40,7 +39,8 @@ function Search() {
     </select><br /><br />
     <button type="submit" onClick={(e)=>handleSubmit(e)}>Submit</button>
   </form>
-  {/* {searchR !== null?<div><h4>Total Available Quantity for searched blood at your location is:{searchR[0].totalQuantity}</h4></div>:""} */}
+  {searchR === 0?<div><h4>Sorry, the searched item is not available with us at the moment.</h4></div>:""}
+  {searchR !== 0 && searchR!== null?<div><h4>Total Available Quantity for searched blood at your location is :{searchR} ml</h4></div>:""}
   </>
   )
 }

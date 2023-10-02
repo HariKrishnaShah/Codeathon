@@ -53,7 +53,7 @@ const summary = async(status)=>{
 }
 
 const search = async(payload)=>{
-    const results = BloodRecord.aggregate([
+    const results = await BloodRecord.aggregate([
         {
             $match:{
                 isavailable:true,
@@ -73,13 +73,12 @@ const search = async(payload)=>{
     {
         $project: {
             _id: 0,
-            bloodgroup: "$_id.bloodgroup",
-            donatetype: "$_id.donatetype",
             totalQuantity: 1
         }
     }
 ]);
-    return results;
+    if(results.length ===0){return 0};
+    return results[0].totalQuantity;
 }
 
 const update = async(recordid)=>{
